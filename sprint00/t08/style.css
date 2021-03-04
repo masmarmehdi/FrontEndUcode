@@ -1,0 +1,9 @@
+form ,section{
+    border:2px solid gray;
+    padding:20px;
+    margin:-5px;
+}
+textarea{
+    width:40%;
+    height:80px;
+}

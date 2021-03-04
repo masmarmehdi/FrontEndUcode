@@ -1,0 +1,29 @@
+h1{
+    padding:10px 0px 40px 40px;
+}
+.box{
+    background-color: #cccccc;
+    position: relative;
+    margin:0 120px;
+    padding: 20px;
+}
+.box::before{
+    content:"";
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height:100%;
+    width:110% ;
+    left: -30px;
+    top:-1px;
+    position: absolute;
+}
+.box::after{
+    content:"";
+    border-left:1px solid black;
+    border-right:1px solid black;
+    height:190%;
+    width:100%;
+    top:-30px;
+    left:-1px;
+    position: absolute;
+}

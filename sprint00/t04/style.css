@@ -1,0 +1,61 @@
+.card{
+    width: 270px;
+    height: 140px;
+    border-radius: 5px;
+    content:"";
+    padding: 10px 0 10px 0;
+    display: inline-flex;
+    font-family: Verdana;
+    position: relative;
+    margin:10px;
+}
+.card:nth-child(1){
+    background: linear-gradient(#4568dc, #b06ab3);
+}
+.card:nth-child(2){
+    background: linear-gradient(#e52d27, #b31217);
+}
+.card:nth-child(3){
+    background: linear-gradient(#000, #61045F);
+}
+.card:nth-child(4){
+    background: linear-gradient(#e52d27, #000);
+}
+.image{
+    width:auto;
+    height:182px;
+    position: absolute;
+    bottom:47px;
+    bottom:0;
+    left:10px;
+}
+#spider-man-img{
+    width:auto;
+    height:182px;
+    position: absolute;
+    bottom:47px;
+    bottom:0;
+    left:10px;
+    top:0px;
+}
+#cards{
+    margin:40px 10px 10px 10px;
+}
+.card-description{
+    margin:-10px 10px 0  0;
+    font-size:12px;
+    width:98%;
+    text-align: right;
+    color:white;
+}
+.hero-name{
+    font-size: 12px;
+    font-weight: alias;
+    color: white;
+    font-weight: bold;
+}
+.real-name{
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top:-10px;
+}

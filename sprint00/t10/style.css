@@ -1,0 +1,21 @@
+#container{
+    display:flex;
+}
+.date{
+    font-family: lato;
+    font-weight: 700;
+    font-size: 1.5em;
+    background-color: #00ace6;
+    text-align: center;
+    color:white;
+}
+.temprature{
+    font-family: lato;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2em;
+}
+.hovering:hover{
+    box-shadow: 0 5px 5px grey, 0 5px 5px grey;
+    margin:-5px 5px -5px 5px;
+}

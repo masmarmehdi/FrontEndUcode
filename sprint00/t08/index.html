@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>t08</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Superhero Form</h1>
+    <form>
+        <fieldset>
+            <legend>About the superhero</legend>
+            <p>
+                <label>Real Name</label>
+            <input type="text" placeholder="Superhero real name" required>
+            <label>Superhero Name</label>
+            <input type="text" placeholder="Superhero alias" required>
+            <label>Age</label>
+            <input type="number" min="1" max="900">
+            </p>
+            <p>
+                <label>About</label>
+                <textarea placeholder="Information about superhero, max 500 symbols" ></textarea>
+            </p>
+            <label>Photo:</label>
+            <input type="file">
+        </fieldset>
+        <fieldset>
+            <legend>Powers</legend>
+                <p>
+                    <input type="checkbox">
+                    <label >Telekinesis</label>
+                    <input type="checkbox">
+                    <label >Super Strength or speed</label>
+                    <input type="checkbox">
+                    <label >Shapeshifting</label>
+                    <input type="checkbox">
+                    <label>Flight</label>
+                    <input type="checkbox">
+                    <label>Elemental control</label>
+                    <input type="checkbox">
+                    <label>Other</label>
+                </p>
+                <p>
+                    <label>Level of control:</label>
+                    <input type="range" value="1">
+                </p>
+        </fieldset>
+        <fieldset>
+            <legend>Origin of Powers</legend>
+            <p>
+                <input type="radio"  name ="drone" value="Unknown" required>
+                <label>Unknown</label>
+                <input type="radio"  name="drone" value="Freak lab accident" required>
+                <label>Freak lab accident</label>
+                <input type="radio" name="drone" value="Chosen by an accident wise being" required>
+                <label>Chosen by an ancient wise being</label>
+                <input type="radio" name="drone" value ="Flight" required>
+                <label>Flight</label>
+                <input type="radio" name="drone" value="The superhero is not human" required>
+                <label>The superhero is not human</label>
+                <input type="radio" name="drone" required>
+                <label >Other</label>
+            </p>
+        </fieldset>
+        <p>
+            <input type="reset" value="Clear">
+            <input type="submit" value="Send">
+        </p>
+    </form>
+</body>
+</html>
