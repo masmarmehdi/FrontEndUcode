@@ -1,0 +1,8 @@
+.image:hover{
+    transform: rotate(-30deg);
+}
+.image{
+    display: block;
+    margin:130px auto;
+    width:40%;
+}
