@@ -1,0 +1,67 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+h1{
+    color:pink;
+}
+h2{
+    color:gray;
+}
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h2{
+    text-align: center;
+}
+
+.check-button {
+    margin: auto;
+}
+.button-text {
+    border: 1px solid grey;
+    border-radius: 100px;
+    padding:10px;
+    color: grey;
+}
+
+.check-button input[type="checkbox"]:checked + .button-text{
+    background-color: #000080;
+    color: white;
+    border: 1px solid white;
+}
+input[type="checkbox"]:checked + .button-text::after {
+    content: "\2713";
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="text"] ,input[type="email"]{
+    border-style: none;
+    border-bottom: 1px solid grey;
+
+} 
+input[type="text"]{
+    width: 97%;
+    padding:12px;
+}
+.info-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 15px;
+    margin: 10px 0 10px 0;
+}
+input[type="submit"]{
+    width: 100%;
+    padding:10px;
+    background-color:pink;
+    border-style: none;
+}
+input[type="submit"]:hover{
+    transition: 1s;
+    background-color: #000080;
+    color:white;
+    border-style: none;
+}

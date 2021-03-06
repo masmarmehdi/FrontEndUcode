@@ -1,0 +1,62 @@
+img{
+    width:60px;
+    height: 60px;
+}
+nav{
+    background-color: #00004d;
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color:white;
+    padding:20px;
+}
+a:hover{
+    transition: 0.5s;
+    background-color: white;
+    color:#00004d;
+}
+span{
+    color:white;
+    padding:20px;
+}
+input[type="search"]{
+    margin-left:10px;
+    width:300px;
+}
+.breadcrumb{
+    list-style-type: none;
+    background-color:#99ccff;
+    padding:10px;
+}
+ul{
+    display:flex;
+}
+ul.breadcrumb li+li:before{
+    content: "/\00a0";
+}
+.phones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+p{
+    text-align: center;
+}
+.phone1{
+    width:300px;
+    height:auto;
+}
+
+.phone2{
+    width: 200px;
+    height: auto;
+}
+.phone3{
+    width: 110px;
+    height: auto;
+}
+.phone4{
+    width:190px;
+    height: auto;
+}
