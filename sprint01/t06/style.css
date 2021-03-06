@@ -1,0 +1,33 @@
+form h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.info-container{
+    margin:10px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+input[type="text"],input[type="email"]{
+    margin: 0 auto;
+    padding: 10px;
+    width: 98%;
+}
+input[type="submit"]{
+    margin: 0 auto;
+    width:98%;
+    text-align: center;
+    padding:10px;
+}
+input[type="submit"]:hover{
+    transition: 1s;
+    background-color: tomato;
+}
+#submit-button{
+    display: flex;
+    justify-content: center;
+}
