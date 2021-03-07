@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Settings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Settings</h1>
+    <div class="section">
+      <form action="#">
+        <div class="typeface-container">
+          <div class="label">Typeface</div>
+          <select name="typeface" id="typeface">
+            <option value="acunim-pro">Acunim Pro</option>
+            <option value="comic-sans">Comic Sans</option>
+            <option value="times-new-roman">Times New Roman</option>
+          </select>
+          <label for="typeface" class="chevron"></label>
+        </div>
+        <div class="theme-container">
+          <div class="label">Dark UI</div>
+          <label for="theme-checkbox" class="toggle-button">
+            <input type="checkbox" id="theme-checkbox">
+            <span class="theme-slider"></span>
+          </label>
+        </div>
+        <div class="weight-container">
+          <div class="label">Weight</div>
+          <label class="container" for="regular-weight">Regular
+            <input type="checkbox" checked="checked" id="regular-weight">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container" for="bold-weight">Bold
+            <input type="checkbox" id="bold-weight">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="color-container">
+          <div class="label">Color</div>
+          <div class="check-row">
+            <label class="container color-checkbox" for="color1">
+              <input type="checkbox" checked="checked" id="color1" value="1">
+              <span class="checkmark color-checkmark"></span>
+            </label>
+            <label class="container color-checkbox" for="color2">
+              <input type="checkbox" id="color2" value="2">
+              <span class="checkmark color-checkmark"></span>
+            </label>
+            <label class="container color-checkbox" for="color3">
+              <input type="checkbox" id="color3" value="3">
+              <span class="checkmark color-checkmark"></span>
+            </label>
+            <label class="container color-checkbox" for="color4">
+              <input type="checkbox" id="color4" value="4">
+              <span class="checkmark color-checkmark"></span>
+            </label>
+            <label class="container color-checkbox" for="color5">
+              <input type="checkbox" id="color5" value="5">
+              <span class="checkmark color-checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="size-container">
+          <div class="label">Size</div>
+          <input type="range" id="size-range" min="0" max="10" value="1">
+        </div>
+      </form>
+      <nav>
+        <ul class="targets">
+          <li class="nav-item">
+            <img src="assets/images/artistic-brush.png" alt="Artistic brush">
+          </li>
+          <li class="nav-item">
+            <img src="assets/images/user-icon.png" alt="User icon">
+          </li>
+          <li class="nav-item">
+            <img src="assets/images/sms-speech-bubble.png" alt="Sms speech bubble">
+          </li>
+          <li class="nav-item">
+            <img src="assets/images/computer-screen.png" alt="Computer">
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </main>
+</body>
+</html>

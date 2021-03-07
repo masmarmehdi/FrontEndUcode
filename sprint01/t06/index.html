@@ -4,49 +4,29 @@
     <meta charset="UTF-8">
     <title>t06</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Superhero request form</h1>
-    <form>
-        <h1>What do you need help with?</h1>
-        <div class="container">
-            <label for="DV">
-                <input type="checkbox">DEFEAT A VILLAIN
-            </label>
-            <label for="SC">
-                <input type="checkbox">SAVE A CIVILLIAN
-            </label>
-            <label for="SR">
-                <input type="checkbox">STOP A ROBBERY
-            </label>
-        </div>
-        <div class="container">
-            <label for="SR">
-                <input type="checkbox">PREVENT AN APOCALYPSE
-            </label>
-            <label for="SR">
-                <input type="checkbox">TRAIN A SIDEKICK
-            </label>
-        </div>
-        <div class="container">
-            <label for="SR">
-                <input type="checkbox">OTHER STUFF
-            </label>
-        </div>
-        <label for="SR">
-            <input type="text" placeholder="Job details">
-        </label>
-        <div class="info-container">
-            <label for="SR">
-                <input type="text" placeholder="Name">
-            </label>
-            <label for="SR">
-                <input type="email" placeholder="Email">
-            </label>
-        </div>
-        <div id="submit-button">
-            <input type="submit" value="SEND">
-        </div>
-    </form>
+    <h2>What do you need help with?</h2>
+    <div class="container">
+        <label class="check-button"><input type="checkbox"><p class="button-text">DEFEAT A VILLAIN</p></label>
+        <label class="check-button"><input type="checkbox"><p class="button-text">SAVE A CIVILLIAN</p></label>
+        <label class="check-button"><input type="checkbox"><p class="button-text">STOP ROBBERY</label>
+    </div>
+    <div class="container">
+        <label class="check-button"><input class="check" type="checkbox"><p class="button-text">DEFEAT A VILLAIN</p></label>
+        <label class="check-button"><input class="check" type="checkbox"><p class="button-text">SAVE A CIVILLIAN</p></label>
+    </div>
+    <div class="container">
+        <label class="check-button"><input class="check" type="checkbox"><p class="button-text">SAVE A CIVILLIAN</p></label>
+    </div>
+    <input type="text" placeholder="Job details">
+    <div class="info-container">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+    </div>
+    <input type="submit" value="SEND">
 </body>
 </html>

@@ -1,0 +1,178 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    width:150px;
+    height: auto;
+}
+
+#logo{
+    width:60px;
+    height: 60px;
+}
+nav{
+    background-color: #00004d;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.check-button input[type="checkbox"]:checked + .button-text{
+    background-color:#00004d;
+    color: white;
+    border: 1px solid white;
+}
+.button-text {
+    border: 1px solid #99ccff;
+    border-radius: 50px;
+    padding:10px;
+    color: black;
+    background-color: #99ccff;
+}
+.brand{
+    display: grid;
+
+}
+div ul{
+    list-style: none;
+    justify-content: space-around;
+}
+.brand ul{
+    display: flex;
+    flex-direction: column;
+    font-size:20px;
+    list-style: none;
+}
+
+input[type="checkbox"]:checked + .button-text::after {
+    content: "\2713";
+}
+.subcontainer input[type="checkbox"] {
+    display: none;
+}
+a{
+    text-decoration: none;
+    color:white;
+    padding:20px;
+}
+nav a:hover{
+    transition: 0.5s;
+    background-color: white;
+    color:#00004d;
+}
+.container-card{
+    display: grid;
+    margin:30px;
+    grid-template-columns: repeat(2,1fr);
+}
+#phone-info{
+    text-align: center;
+    font-size: 30px;
+}
+#phone1{
+    width:300px;
+    height: auto;
+}
+span{
+    color:white;
+    padding:20px;
+}
+input[type="search"]{
+    margin-left:10px;
+    width:300px;
+}
+.brand{
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+}
+.breadcrumb{
+    margin-top: 0;
+    list-style-type: none;
+    background-color:#99ccff;
+    padding:10px;
+}
+.brand{
+    grid-column: 1/-2 ;
+}
+
+.name,.buy{
+    grid-column: 4/-1;
+}
+.place-phone{
+    margin-right: 10px;
+}
+.Unavailable{
+    border:none;
+    padding:10px;
+    background-color: darkred;
+    color:wheat;
+}
+.available{
+    padding: 10px;
+    border: none;
+    background-color: #00004d;
+    color: wheat;
+}
+ul{
+    display:flex;
+}
+ul.breadcrumb li+li:before{
+    content: "/\00a0";
+}
+
+.container{
+    display: grid;
+    margin:30px;
+    grid-template-columns: repeat(5, 1fr);
+}
+#phones{
+    grid-template-columns: repeat(4,2fr);
+    grid-gap: 150px;
+    margin:50px 0px 0px 20px;
+}
+p{
+    text-align: center;
+}
+h4{
+    text-align: start;
+    margin:10px;
+}
+#card-available{
+    border: none;
+    color: wheat;
+    padding: 15px 40px 15px 40px;
+    background-color: #00004d;
+}
+#feedback{
+    margin-top:10px;
+    border: 1px solid black;
+}
+footer{
+    background: #00004d;
+    color:white;
+    padding:5px;
+    margin:0px;
+}
+@media (max-width:720px){
+    nav{
+        width:100%;
+        background-color: #00004d;
+        display: flex;
+        justify-content: space-around;
+    }
+    #phones{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .container{
+        display: grid;
+        margin:30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .brand{
+        grid-column: 1/-1 ;
+    }
+    
+    .name,.buy{
+        grid-column: 1/-1;
+    }
+}
