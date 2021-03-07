@@ -18,7 +18,7 @@ nav{
 }
 .check-button input[type="checkbox"]:checked + .button-text{
     background-color:#00004d;
-    color: white;
+    color: wheat;
     border: 1px solid white;
 }
 .button-text {
@@ -44,6 +44,7 @@ div ul{
 }
 
 input[type="checkbox"]:checked + .button-text::after {
+    margin-left: 10px;
     content: "\2713";
 }
 .subcontainer input[type="checkbox"] {
@@ -51,7 +52,7 @@ input[type="checkbox"]:checked + .button-text::after {
 }
 a{
     text-decoration: none;
-    color:white;
+    color:wheat;
     padding:20px;
 }
 nav a:hover{
@@ -64,16 +65,17 @@ nav a:hover{
     margin:30px;
     grid-template-columns: repeat(2,1fr);
 }
+.container-card img{
+    width:500px;
+}
 #phone-info{
     text-align: center;
     font-size: 30px;
+    width:100%;
 }
-#phone1{
-    width:300px;
-    height: auto;
-}
+
 span{
-    color:white;
+    color:wheat;
     padding:20px;
 }
 input[type="search"]{
@@ -90,15 +92,8 @@ input[type="search"]{
     background-color:#99ccff;
     padding:10px;
 }
-.brand{
-    grid-column: 1/-2 ;
-}
-
-.name,.buy{
-    grid-column: 4/-1;
-}
-.place-phone{
-    margin-right: 10px;
+.container-card img{
+    width:450px;
 }
 .Unavailable{
     border:none;
@@ -118,16 +113,9 @@ ul{
 ul.breadcrumb li+li:before{
     content: "/\00a0";
 }
-
 .container{
     display: grid;
-    margin:30px;
-    grid-template-columns: repeat(5, 1fr);
-}
-#phones{
-    grid-template-columns: repeat(4,2fr);
-    grid-gap: 150px;
-    margin:50px 0px 0px 20px;
+    grid-template-columns: repeat(2, 1fr);
 }
 p{
     text-align: center;
@@ -151,28 +139,64 @@ footer{
     color:white;
     padding:5px;
     margin:0px;
+    position: fixed;
+    width:100%;
+    bottom:0;
 }
-@media (max-width:720px){
+@media (max-width:768px){
+    nav{
+        width:100%;
+        background-color: #00004d;
+        display: inline-block;
+    }
+    span{
+        display: inline-flex;
+    }
+    input[type="search"]{
+        width:100px;
+    }
+    #phones,.name,.buy{
+        display:grid;
+        grid-template-columns: repeat(auto-fit,1fr);
+    }
+    .container{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .container-card img{
+        width:300px;
+    }
+    li{
+        text-align:center;
+    }
+}
+@media (min-width:1024px){
     nav{
         width:100%;
         background-color: #00004d;
         display: flex;
-        justify-content: space-around;
     }
-    #phones{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
+    span{
+        display: inline-flex;
     }
-    .container{
-        display: grid;
-        margin:30px;
-        grid-template-columns: repeat(2, 1fr);
+    input[type="search"]{
+        width:100px;
+    }
+    #phones,.name,.buy{
+        display:grid;
+        grid-template-columns: repeat(auto-fit,1fr);
     }
     .brand{
-        grid-column: 1/-1 ;
+        display: inline-block;
     }
-    
-    .name,.buy{
-        grid-column: 1/-1;
+    .container{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .container-card img{
+        width:300px;
+    }
+    li{
+        text-align:center;
     }
 }

@@ -74,13 +74,13 @@ h1 {
     text-align: center;
 }
 
-.targets {
+.left-nav {
     background-color: #323A42;
     border-radius: 0 10px 10px 0;
     margin: 0;
 }
 
-.targets li img {
+.left-nav li img {
     width: 55%;
     margin: 15px 0 15px 5px;
 }
@@ -88,8 +88,6 @@ h1 {
 .nav-item {
     text-align: center;
 }
-
-/* Toggle button */
 
 .toggle-button {
     position: relative;
@@ -151,9 +149,7 @@ input:checked + .theme-slider::before {
     padding-top: 30px;
 }
 
-/* --- Weight checkmarks --- */
 
-/* Customize the label (the container) */
 .container {
     display: inline-block;
     position: relative;
@@ -168,7 +164,7 @@ input:checked + .theme-slider::before {
     user-select: none;
 }
 
-/* Hide the browser's default checkbox */
+
 .container input {
     position: absolute;
     opacity: 0;
@@ -177,7 +173,6 @@ input:checked + .theme-slider::before {
     width: 0;
 }
 
-/* Create a custom checkbox */
 .checkmark {
     position: absolute;
     top: 0;
@@ -188,9 +183,8 @@ input:checked + .theme-slider::before {
     border: 1px solid #808080;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
-    content: "✔";
+    content: "\2713";
     position: absolute;
     left: 4px;
     top: -1px;
@@ -199,12 +193,10 @@ input:checked + .theme-slider::before {
     color: #5FB9A5;
 }
 
-/* Show the checkmark when checked */
 .container input:checked ~ .checkmark:after {
     display: block;
 }
 
-/* --- Colors block styling --- */
 
 .check-row {
     display: flex;
@@ -237,7 +229,6 @@ input:checked + .theme-slider::before {
 .color-checkbox:nth-child(4) .color-checkmark {background-color: #DCD868;}
 .color-checkbox:nth-child(5) .color-checkmark {background-color: #D2815F;}
 
-/* Size block styling  */
 
 #size-range {
     margin-top: 20px;
@@ -253,23 +244,22 @@ input:checked + .theme-slider::before {
     position: relative;
 }
 
-/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
 #size-range::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
+    -webkit-appearance: none; 
     appearance: none;
-    width: 23px; /* Set a specific slider handle width */
+    width: 23px; 
     height: 23px;
     border-radius: 50%; 
-    background: #5FB9A5; /* Green background */
-    cursor: pointer; /* Cursor on hover */
+    background: #5FB9A5; 
+    cursor: pointer; 
 }
 
 .size-range::-moz-range-thumb {
-    width: 23px; /* Set a specific slider handle width */
+    width: 23px; 
     height: 23px;
     border-radius: 50%;
-    background: #5FB9A5; /* Green background */
-    cursor: pointer; /* Cursor on hover */
+    background: #5FB9A5; 
+    cursor: pointer;
 }
 
 #size-range::before {
