@@ -5,6 +5,6 @@ function total(addCount, addPrice, currentTotal){
     }
     else{
         result = addCount * addPrice + currentTotal;
-    } 
+    }  
     return result;
 }

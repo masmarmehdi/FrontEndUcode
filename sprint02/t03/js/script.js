@@ -2,7 +2,7 @@ do{
     var num = Number(prompt("Enter a number between 1 and 10"));
 } 
 while(num < 1 || num > 10 || Number.isNaN(num));
-switch(num){
+switch(num){ 
     case 1:
         alert("Back to square 1");
         break;

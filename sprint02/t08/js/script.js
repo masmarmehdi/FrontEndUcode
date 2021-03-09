@@ -7,7 +7,7 @@ function checkBrackets(str){
         else if(str[i] == '('){
             return str.replace(i+1, ')');
         }
-    }
+    } 
     return str;
 }
 checkBrackets();
