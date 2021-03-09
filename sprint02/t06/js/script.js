@@ -6,7 +6,7 @@ if(firstName.match(/[a-z]+/) && lastName.match(/[a-z]+/)){
     console.log(`Hello ${firstName[0].toUpperCase()+ firstName.slice(1)} ${lastName[0].toUpperCase()+ lastName.slice(1)}!`);
     
 }
-else{
+else{ 
     alert("Wrong input");
     console.log("Wrong input");
 }

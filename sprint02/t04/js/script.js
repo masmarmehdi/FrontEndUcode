@@ -45,7 +45,7 @@ else if(beginRange !== "" && endRange !== ""){
     checkDivision(beginRange,endRange);
 }*/
 function checkDivision(beginRange=1, endRange=100) {
-    if (
+    if ( 
       beginRange === "" ||
       endRange === "" ||
       beginRange === null ||
