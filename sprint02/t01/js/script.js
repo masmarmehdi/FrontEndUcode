@@ -22,4 +22,3 @@ alert("num is "+typeof(num)+"\n"
     +"obj  is "+typeof(obj)+"\n"
     +"sym  is "+typeof(sym)+"\n"
     +"t00  is "+typeof(t00)+"\n");
-

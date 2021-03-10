@@ -19,4 +19,4 @@ function checkBrackets(string) {
     }
     return arr.length;
 }
-checkBrackets();
+
