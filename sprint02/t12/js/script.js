@@ -12,5 +12,5 @@ function concat(str1, str2) {
     return func;
   } else {
     return (str1 += " " + str2);
-  }
+  } 
 }
