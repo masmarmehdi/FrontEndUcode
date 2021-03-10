@@ -1,13 +1,22 @@
-function checkBrackets(str){
-    let counter = 0;
-    for(let i = 0; i < str.length; i++){
-        if(str[i] == ')'){
-            str[i-1] == '(';
+function checkBrackets(string) {
+    var arr = []; // creating an empty array so we can add needed characters to it.
+    if (typeof(string) != "string") {
+        return -1;
+    }
+    else {
+        for (let i = 0; i <= string.length; i++) {
+            if (string[i] == '('){
+                arr.push('(');
+            }
+            else if (string[i] == ')'){
+                arr.push(')');
+            } 
         }
-        else if(str[i] == '('){
-            return str.replace(i+1, ')');
+        arr = arr.join("");
+        for (let i = 0; i <= string.length; i++) {
+            arr = arr.replace(/\(\)/, "");
         }
-    } 
-    return str;
+    }
+    return arr.length;
 }
 checkBrackets();
