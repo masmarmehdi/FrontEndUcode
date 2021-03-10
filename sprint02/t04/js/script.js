@@ -12,7 +12,7 @@ function checkDivision(beginRange, endRange){
             console.log(`${i} is a multiple of 3 and a multiple of 10`);
         }
         else if(i % 2 == 0 && i % 10 == 0){
-            console.log(`${i} is even and a multiple of 10`)
+            console.log(`${i} is even and a multiple of 10`);
         }
         else if(i % 2 == 0){
             console.log(`${i} is even`);
