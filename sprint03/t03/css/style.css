@@ -1,0 +1,32 @@
+
+
+button{
+    cursor: pointer;
+    border: none;
+    width:15%;
+    background: linear-gradient(90deg, darkblue,darkred);
+    color:wheat;
+    padding:10px 50px;
+    text-align: center;
+}
+#upgradehuman{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+button:hover{
+    background: darkred;
+    color: wheat;
+    transition: 1s;
+}
+span{
+    color:darkred;
+}
+h2{
+    color:darkblue;
+}
+h1{
+    background: linear-gradient(90deg, darkblue,darkred);
+    color:wheat;
+    padding: 30px 20px;
+}
