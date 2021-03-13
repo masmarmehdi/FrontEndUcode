@@ -8,10 +8,11 @@ class Human{
     }
     sleepFor(){
         let sleep = prompt("How many seconds?");
-        document.getElementById("sleep").innerHTML = "I'm sleeping";
+        document.getElementById("sleep").innerHTML = "I'm sleeping...";
         setTimeout(function(){
         document.getElementById("sleep").innerHTML = "I'm awake now";
         },1000*sleep);
+        
     }
     feed(){
         if(this.calories < 500){
@@ -45,13 +46,13 @@ class Superhero extends Human{
         document.getElementById("fly").innerHTML = "I'm flying";
         setTimeout(function(){
             document.getElementById("fly").innerHTML = "";
-        },1000);
+        },10000);
     }
     fightWithEvil(){
         document.getElementById("fight").innerHTML = "Khhhh-chh... Bang-g-g-g... Evil is defeated!";
         setTimeout(function(){
             document.getElementById("fight").innerHTML = "";
-        },1000);
+        },10000);
     }
 }
 let human = new Human();

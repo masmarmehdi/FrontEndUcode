@@ -30,3 +30,7 @@ h1{
     color:wheat;
     padding: 30px 20px;
 }
+#feed, #fight, #fly, #sleep{
+    color:darkblue;
+    font-size: 25px;
+}

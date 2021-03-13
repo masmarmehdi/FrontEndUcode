@@ -24,7 +24,7 @@ function runTimer(id, delay, counter){
     let timer = new Timer(id, delay, counter);
     timer.start();
     timer.tick();
-    var inter2 = setInterval(function(){
+    setInterval(function(){
         if(counter == timer.stopCount){
             timer.stop();
             counter  = 0;
