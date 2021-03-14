@@ -5,7 +5,7 @@ class Node {
     }
 }
 
-class List {
+class List { 
     constructor() {
         this.head = null;
         this.length = 0;

@@ -22,7 +22,7 @@ houseBlueprint = HouseBuilder.prototype = {
     }
 };
 
-/*                      Testing
+/*                       Testing
 let houseBlueprint = new HouseBuilder('88 Crescent Avenue',
 'Spacious town house with wood flooring, 2-car garage, and a back patio.',
 'J. Smith',110,5);

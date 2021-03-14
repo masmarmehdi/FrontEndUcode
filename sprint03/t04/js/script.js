@@ -11,7 +11,7 @@ let houseMixin = HouseBuilder.prototype = {
         let lengthAfterWord = str.length + this.description.indexOf(str);
         this.description =`${this.description.slice(0, lengthBeforeWord)}${this.description.slice(lengthAfterWord)}`;
     },
-    wordEncrypt() {
+    wordEncrypt() { 
         let input = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
         let output = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm';
         let index = function(x){

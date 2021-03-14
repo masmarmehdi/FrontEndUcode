@@ -31,4 +31,4 @@ function runTimer(id, delay, counter){
         }
     },delay*counter);
 }
-runTimer("Bleep", 1000, 10);
+//runTimer("Bleep", 1000, 10);
