@@ -67,7 +67,7 @@ let arr = [
     bankVault.add(client4);
 
 
-//         coinCollection
+//        coinCollection
     let coin = new WeakMap();
     const coin1 = {
         value:1

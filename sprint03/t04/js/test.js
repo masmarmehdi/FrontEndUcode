@@ -11,13 +11,13 @@ house.wordReplace("wood", "tile");
 console.log(house.description);
 
 house.wordInsertAfter("with", "marble");
-console.log(house.description);// Spacious house with marble tile flooring, 2-car garage, and a back patio.
+console.log(house.description);//  Spacious house with marble tile flooring, 2-car garage, and a back patio.
 
 house.wordDelete("town ");
-console.log(house.description);// Spacious house with tile flooring, 2-car garage, and a back patio.
+console.log(house.description);//  Spacious house with tile flooring, 2-car garage, and a back patio.
 
 house.wordEncrypt();
-console.log(house.description);// Fcnpvbhf ubhfr jvgu zneoyr gvyr sybbevat, 2-pne tnentr, naq n onpx cngvb.
+console.log(house.description);//  Fcnpvbhf ubhfr jvgu zneoyr gvyr sybbevat, 2-pne tnentr, naq n onpx cngvb.
 
 house.wordDecrypt();
-console.log(house.description);// Spacious house with marble tile flooring, 2-car garage, and a back patio
+console.log(house.description);//  Spacious house with marble tile flooring, 2-car garage, and a back patio

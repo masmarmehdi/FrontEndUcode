@@ -5,7 +5,7 @@ class Human{
         this.gender = gender;
         this.age = age;
         this.calories = calories;
-    }
+    } 
     sleepFor(){
         let sleep = prompt("How many seconds?");
         document.getElementById("sleep").innerHTML = "I'm sleeping...";

@@ -25,7 +25,7 @@ const validator = {
         return false;
     }
 }
-//              Testing 
+//                  Testing 
 let person= new Proxy({},validator);
 person.age = 100;// Setting value'100' to 'age'
 console.log(person.age);// Trying to access the property'age'...// 100

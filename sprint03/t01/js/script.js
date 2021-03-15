@@ -1,4 +1,4 @@
-// creating a prototype called removeDuplicates
+//      creating a prototype called removeDuplicates
 String.prototype.removeDuplicates = function() {
     this.str = ''; // initialzing the string as an empty one
     for (let i = 0; i < this.length; i++) { 
@@ -16,7 +16,7 @@ String.prototype.removeDuplicates = function() {
     }
     return this.str.join(' ');
 }
-// Example for testing 
+//  Example for testing 
 let str = "Giant Spiders?   What’s next? Giant Snakes? ";
 console.log(str);
 str = str.removeDuplicates();

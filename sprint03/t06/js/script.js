@@ -1,5 +1,5 @@
 var firstValue = 1;
-while (true) {
+while (true) { 
     var number = prompt(`Previous result: ${number}. Enter a new number:`);
     if (+number){
         firstValue += (+number);

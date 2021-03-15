@@ -7,7 +7,7 @@ while(ll.remove(100));
 ll.log();
 // "1, 2, 3, 4, 5"
 ll.add(10);
-ll.log();
+ll.log(); 
 // "1, 2, 3, 4, 5, 10"
 console.log(ll.contains(10));
 // "true"
