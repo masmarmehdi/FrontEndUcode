@@ -1,0 +1,30 @@
+main{
+    display: flex;
+    align-items: center;
+}
+#placeholder{
+    flex: auto;
+    visibility: hidden;
+}
+#notification{
+    background-color: rgb(103, 103, 103);
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+.tableHeader{
+    background-color: darkred;
+    color:wheat;
+}
+.tableBody{
+    background-color: gainsboro;
+}
+table{
+    border: 3px solid black;
+    margin:auto;
+}
+#header0,#header1,#header2{
+    cursor: pointer;
+}
+td,th{
+    padding: 10px 20px;
+}
