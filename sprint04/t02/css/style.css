@@ -11,11 +11,11 @@ main{
     padding: 10px 15px;
     border-radius: 50px;
 }
-.tableHeader{
+thead{
     background-color: darkred;
     color:wheat;
 }
-.tableBody{
+tbody{
     background-color: gainsboro;
 }
 table{
