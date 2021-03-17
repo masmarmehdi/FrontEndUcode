@@ -1,87 +1,162 @@
 let tableElement = [
-    {name: "Black Pantera", strength: 66, age: 53},
-    {name: "Captain America", strength: 79, age: 137},
-    {name: "Captain Marvel", strength: 97, age: 26},
-    {name: "Hulk", strength: 80, age: 49},
-    {name: "Iron Man", strength: 88, age: 48},
-    {name: "Spider-Man", strength: 78, age: 16},
-    {name: "Thanos", strength: 99, age: 1000},
-    {name: "Thor", strength: 95, age: 1000},
-    {name: "Yon-Rogg", strength: 73, age: 52}
-  ]; 
-let headerElement = ['Name', 'Strength', 'Age'];
-  
-let table = document.createElement('table');
-document.body.append(table);
-  
-let tablehead = document.createElement('thead');
-table.append(tablehead);
-  
-let tablebody = document.createElement('tbody');
-table.append(tablebody);
-  
-let tr = document.createElement('tr');
-tablehead.append(tr);
-  
-for (let thead = 0; thead < headerElement.length; thead++) {
-    let th = document.createElement('th');
-    th.innerHTML = headerElement[thead];
-    th.setAttribute('id',`header${thead}`);
-    tr.append(th);
-  }
-  
-let renderCell = function(){
-    tablebody.innerHTML = '';
-    for (let i = 0; i < tableElement.length; i++) {
-      let tr = document.createElement('tr');
-      tablebody.append(tr);
-      for (let j = 0; j < Object.keys(tableElement[0]).length; j++) {
-        let td = document.createElement('td');
-        td.innerHTML = Object.values(tableElement[i])[j];
-        tr.append(td);
-      }
+    ["Black Pantera", 66, 53],
+    ["Captain America", 79, 137],
+    ["Captain Marvel", 97, 26],
+    ["Hulk", 80, 49],
+    ["Iron Man", 88, 48],
+    ["Spider-Man", 78, 16],
+    ["Thanos", 99, 1000],
+    ["Thor", 95, 1000],
+    ["Yon-Rogg", 73, 52]
+]; 
+
+let head = ["Name", "Strength", "Age"];
+let sort = ['ASC','DESC'];
+
+// Creating a function for creting the whole table
+function tableCreate() {
+    var body = document.getElementsByTagName('body')[0];
+    var table = document.createElement('table');
+    var tableHead = document.createElement('thead');
+    var tr = document.createElement('tr');
+    //Creation of the table head
+    for (let i = 0; i < head.length; i++) {
+        var th = document.createElement('th');
+        th.append(document.createTextNode(head[i]));
+        th.className = head[i];
+        th.onclick = function() { sortTable(head[i]); };
+        tr.append(th);
+    }
+    tableHead.append(tr);
+
+    //Creationg of the table body
+    var tableBody = document.createElement('tbody');
+    for (var i = 0, j = 0; i < tableElement.length; i++) {
+        var tr = document.createElement('tr');
+        for (var k = 0; k < head.length; k++) {
+            var td = document.createElement('td');
+            td.append(document.createTextNode(tableElement[i][k]));
+            td.id = `data ${j}`;
+            j++;
+            tr.append(td);
+        }
+        tableBody.append(tr);
+    }
+    // Appending the table
+    table.append(tableHead);
+    table.append(tableBody);
+    body.append(table);
+
+}
+tableCreate(tableElement);
+function sortTable(sortBy){
+    var index1, index2, index3; // those variables for placing the indexes as I wanted it to be
+    if(sortBy === "Name"){
+        index1 = 0; index2 = 1; index3 = 2;
+        if(document.getElementById("notification").innerHTML !== `Sorting by ${head[0]}, order: ${sort[0]}`){
+            document.getElementById("notification").innerHTML = `Sorting by ${head[0]}, order: ${sort[0]}`;
+            sortASC(tableElement, index1, index2, index3);
+        }else{
+            document.getElementById("notification").innerHTML = `Sorting by ${head[0]}, order: ${sort[1]}`;
+            sortDESC(tableElement,index1, index2, index3);
+        }
+    }
+    if(sortBy === "Strength"){
+        index1 = 1; index2 = 0; index3 = 2;
+        if(document.getElementById("notification").innerHTML !== `Sorting by ${head[1]}, order: ${sort[0]}`){
+            document.getElementById("notification").innerHTML = `Sorting by ${head[1]}, order: ${sort[0]}`;
+            sortASC(tableElement, index1, index2, index3);
+        }else{
+            document.getElementById("notification").innerHTML = `Sorting by ${head[1]}, order: ${sort[1]}`;
+            sortDESC(tableElement, index1, index2, index3);
+        }
+    }
+    if(sortBy === "Age"){
+        index1 = 2; index2 = 1; index3 = 0;
+        if(document.getElementById("notification").innerHTML !== `Sorting by ${head[2]}, order: ${sort[0]}`){
+            document.getElementById("notification").innerHTML = `Sorting by ${head[2]}, order: ${sort[0]}`;
+            sortASC(tableElement,index1, index2, index3);
+        }else{
+            document.getElementById("notification").innerHTML = `Sorting by ${head[2]}, order: ${sort[1]}`;
+            sortDESC(tableElement,index1, index2, index3);
+        }
+    }
+    // Accessing my data on each 
+    for (var i = 0, k = 0; i < tableElement.length; i++) {
+        document.createElement('tr');
+        for (var j = 0; j < head.length; j++) {
+            document.createElement('td');
+            if(head[j] == 'Name'){
+                document.getElementById(`data ${k}`).innerHTML = tableElement[i][j]; 
+                k++;
+            }
+            else if(head[j] == 'Strength'){
+                document.getElementById(`data ${k}`).innerHTML = tableElement[i][j]; 
+                k++;
+            }
+            else if(head[j] == 'Age'){
+                document.getElementById(`data ${k}`).innerHTML = tableElement[i][j]; 
+                k++;
+            }
+        }
     }
 }
-  
-renderCell();
 
-document.querySelector('#header0').addEventListener('click', function (event){
-    if (event.target.innerText === 'Name'){
-        document.querySelector('#headerValue').innerHTML = '';
-        document.querySelector('#headerValue').innerHTML = 'Name';
-        if(tableElement.sort() == true){
-            document.querySelector('#sortValue').innerHTML = '';
-            document.querySelector('#sortValue').innerHTML = 'ASC';
-            tableElement.sort() = false;
+function sortASC(tableElement, index1, index2, index3){
+    // Using BUBBLE SORT to solve this problem
+    var swapp;
+    var n = tableElement.length-1;
+    do {
+        swapp = false;
+        for (var i=0; i < n; i++)
+        {
+            if (tableElement[i][index1] > tableElement[i+1][index1])
+            {
+                // Sort by names
+               var temp = tableElement[i][index1];
+               tableElement[i][index1] = tableElement[i+1][index1];
+               tableElement[i+1][index1] = temp;
+               // Sort by strength
+               temp = tableElement[i][index2];
+               tableElement[i][index2] = tableElement[i+1][index2];
+               tableElement[i+1][index2] = temp;
+               //  Sort by age
+               temp = tableElement[i][index3];
+               tableElement[i][index3] = tableElement[i+1][index3];
+               tableElement[i+1][index3] = temp;
+               swapp = true;
+            }
         }
-        else{
-            tableElement.reverse() == false;
-            document.querySelector('#sortValue').innerHTML = '';
-            document.querySelector('#sortValue').innerHTML = 'DSC';
+        n--;
+    } while (swapp);
+    return tableElement;
+}
+function sortDESC(tableElement, index1, index2, index3){
+    // Using BUBBLE SORT to solve this problem
+    var swapp;
+    var n = tableElement.length-1;
+    do {
+        swapp = false;
+        for (var i=0; i < n; i++)
+        {
+            if (tableElement[i][index1] < tableElement[i+1][index1])
+            {
+                // Sort by names
+               var temp = tableElement[i][index1];
+               tableElement[i][index1] = tableElement[i+1][index1];
+               tableElement[i+1][index1] = temp;
+               // Sort by strength
+               temp = tableElement[i][index2];
+               tableElement[i][index2] = tableElement[i+1][index2];
+               tableElement[i+1][index2] = temp;
+               // Sort by age
+               temp = tableElement[i][index3];
+               tableElement[i][index3] = tableElement[i+1][index3];
+               tableElement[i+1][index3] = temp;
+               swapp = true;
+            }
         }
-        renderCell();
-    }
-  });
-
-document.querySelector('#header1').addEventListener('click', function (event){
-    if (event.target.innerText === 'Strength'){
-        document.querySelector('#headerValue').innerHTML = 'Strength';
-        tableElement.sort((a, b) => a.strength-b.strength);
-        document.querySelector('#sortValue').innerHTML = 'ASC';
-        renderCell();
-    }
-});
-
-document.querySelector('#header2').addEventListener('click', function (event){
-    document.querySelector('#headerValue').innerHTML = 'Age';
-    if (event.target.innerText === 'Age'){
-        if(tableElement.sort((a, b) => a.age - b.age) == true){
-            document.querySelector('#sortValue').innerHTML = 'ASC';
-        }
-        else{
-            tableElement.sort((a,b) => b.age - a.age) = false;
-            document.querySelector('#sortValue').innerHTML = 'ASC';
-        }
-        renderCell();
-    }
-});
+        n--;
+    } while (swapp);
+    return tableElement;
+}

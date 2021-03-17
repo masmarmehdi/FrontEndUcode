@@ -1,0 +1,25 @@
+img{
+    width:600px;
+    height: 400px;
+}
+button{
+    align-items:stretch;
+}
+div{
+    display:flex;
+    justify-content: center;
+}
+#triangle-left{
+    width:  0px;
+    height: 0px;
+    border: 20px solid transparent;
+    border-right-color: red;
+    margin-right: 10px;
+}
+#triangle-right{
+    width: 0px;
+    height: 0px;
+    border: 20px solid transparent;
+    border-left-color: red;
+    margin-left: 10px;
+}

@@ -1,0 +1,45 @@
+ul{
+    list-style: none;
+}
+.square {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.square[value="off"] { 
+    border: 1px dashed black; 
+}
+#red {
+    left: 10%;
+    top: 10%;
+    background-color: red;
+}
+#green {
+    float: left;
+    left: 20%;
+    top: 20%;
+    background-color: green;
+}
+#blue {
+    left: 30%;
+    top: 30%;
+    background-color: blue;
+}
+#yellow {
+    left: 40%;
+    top: 40%;
+    background-color: yellow;
+}
+#pink {
+    left:50%;
+    top: 50%;
+    background-color: pink;
+}
+#purple {
+    left: 60%;
+    top: 60%;
+    background-color: purple;
+}

@@ -1,0 +1,58 @@
+h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    padding: 5px;
+    background-color: #000000;
+    justify-content: space-around;
+    color:#ffffff;
+}
+
+p{
+    background-color: 	#564d4d;
+    padding:10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.title{
+    text-align: center;
+    margin: 10px 10px  50px 15px;
+    background-color: #db0000 ;
+}
+
+#actor1,#actor2,#actor3{
+    margin: 40px 10px  50px 15px;
+    background-color: #db0000 ;
+}
+ul{
+    margin-left: -50px;
+    list-style: none;
+    border-right: 1px solid red;
+}
+li{
+    color:#ffffff;
+    padding: 20px 30px 20px 30px;
+    font-size: 20px;
+}
+img{
+    margin-top:10px;
+    height: 400px;
+}
+span{
+    text-align: center;
+    margin-left: 15px;
+    font-size: 15px;
+}
+h2{
+    margin-left: 10px;
+    width: fit-content;
+    padding:10px;
+    color:#ffffff;
+    background-color: #db0000;
+}
+.title:hover{
+    background-color:#831010;
+    cursor: pointer;
+    transition: 1s;
+}
