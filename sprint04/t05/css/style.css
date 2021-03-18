@@ -12,33 +12,33 @@ ul{
 .square[value="off"] { 
     border: 1px dashed black; 
 }
-#red {
+#square1 {
     left: 10%;
     top: 10%;
     background-color: red;
 }
-#green {
+#square2 {
     float: left;
     left: 20%;
     top: 20%;
     background-color: green;
 }
-#blue {
+#square3 {
     left: 30%;
     top: 30%;
     background-color: blue;
 }
-#yellow {
+#square4 {
     left: 40%;
     top: 40%;
     background-color: yellow;
 }
-#pink {
+#square5 {
     left:50%;
     top: 50%;
     background-color: pink;
 }
-#purple {
+#square6 {
     left: 60%;
     top: 60%;
     background-color: purple;
