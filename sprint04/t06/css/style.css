@@ -1,0 +1,24 @@
+div{
+    display: flex;
+}
+h1{
+    margin: auto;
+}
+img{
+    border:1px solid black;
+}
+#notification{
+    background-color: rgb(42, 61, 165);
+    padding: 10px 15px;
+    border-radius: 50px;
+    width: fit-content;
+    position: fixed;
+    margin: 10px 15px;
+    top: 5; right: 0; left: 90;
+}
+img{
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}

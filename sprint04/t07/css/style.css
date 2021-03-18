@@ -1,0 +1,61 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2{
+    text-align: center;
+}
+a{
+    color:darkblue;
+    text-decoration: none;
+}
+a:hover{
+    background-color: darkblue;
+    color:wheat;
+    padding:10px;
+    transition: 1s;
+}
+#city{
+    font-size: 30px;
+    background: linear-gradient(darkblue , #1a8cff) ;
+    text-align: center;
+    color:wheat;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+.main{
+    border:1px solid black;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: fit-content;
+}
+.forecast{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto 20px;
+}
+#day{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+.Date{
+    font-size: 20px;
+    width: max-content;
+    padding: 10px 40px;
+    border-bottom: 1px solid ;
+}
+.Temp{
+    padding: 10px 20px;
+}
+img{
+    height: 100px;
+    width: 100px;
+    margin: 10px 0px;
+}
+.Date:hover{
+    background: linear-gradient(darkblue , #1a8cff) ;
+    color:wheat;
+    transition: 1s;
+}

@@ -1,0 +1,60 @@
+.all {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    margin: -40px;
+}
+
+.buttons {
+    margin: 50px 50px 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons > input {
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+}
+
+.add {
+    background-color: darkblue;
+    font-size: 20px;
+    color: wheat;
+}
+
+.textarea {
+    margin: 40px 50px 50px 50px;
+    background-color: darkblue;
+}
+
+.clear {
+    font-size: 20px;
+}
+
+textarea {
+    resize: vertical;
+    margin: 10px 0 30px 30px;
+    width: calc(100% - 70px);
+    border: 1px solid darkblue;
+}
+
+.text-input {
+    margin: 30px;
+    color:wheat;
+}
+
+.notes-archives {
+    background-color: lightgray;
+    padding: 30px 0 20px 30px;
+    margin: 0 50px 50px 50px;
+}
+
+.output-text {
+    background: white;
+    padding: 5px;
+    width: calc(100% - 30px);
+}
