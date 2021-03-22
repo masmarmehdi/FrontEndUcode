@@ -1,56 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>race00</title>
+    <meta charset="utf-8">
+    <title>Calculator</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <h1>Calculator</h1>
-    <div id="container">
+    <div class="calculator">
+        <div class="header">
+            <input class="history" type="text" value="" placeholder="0" readonly>
+            <input class="result" type="text" value="" placeholder="0" readonly>
+        </div>
         <table>
-           <div>
-                <p id='history'></p>
-                <p id='result'></p>
-           </div>
-            <tbody>
-                <tr>
-                    <td class="operator" id="C">C</td>
-                    <td class="operator" id="backspace">&lt;-</td>
-                    <td class="operator" id="plusMinus">+/-</td>
-                    <td class="operator" id="percentage">%</td>
-                    <td class="operator" id="/">÷</td>
-                    <td class="operator" id="!">!</td>
-                </tr>
-                <tr>
-                    <td class="number" id="7">7</td>
-                    <td class="number" id="8">8</td>
-                    <td class="number" id="9">9</td>
-                    <td class="operator" id="*">*</td>
-                    <td class="operator" id=sqrt colspan="2">√x</td>
-                </tr>
-                <tr>
-                    <td class="number" id="4">4</td>
-                    <td class="number" id="5">5</td>
-                    <td class="number" id="6">6</td>
-                    <td class="operator" id="+">+</td>
-                    <td class="operator" id="memoryRecall" colspan="2">MR</td>
-                </tr>
-                <tr>
-                    <td class="number" id="1">1</td>
-                    <td class="number" id="2">2</td>
-                    <td class="number" id="3">3</td>
-                    <td class="operator" id="-">-</td>
-                    <td class="operator" id="memoryClear" colspan="2">MC</td>
-                </tr>
-                <tr>
-                    <td class="number" id="0">0</td>
-                    <td class="operator" id="float">.</td>
-                    <td class="operator" colspan="4" id="equal">=</td>
-                </tr>
-            </tbody>
+            <tr>
+                <td class="buttons" id="C" onclick="clearResult('result','history')">C</td>
+                <td class="buttons" onclick="saveValue()">MC</td>
+                <td class="buttons" onclick="displaySavedValue(0)">MR</td>
+                <td class="buttons" onclick="displaySavedValueSumResult(1)">M+</td>
+                <td class="buttons" onclick="displaySavedValueSumResult(-1)">M-</td>
+            </tr>
+            <tr>
+                <td class="buttons bigger operator" onclick="sqrt()" colspan="2">√‎</td>
+                <td class="buttons bigger operator" onclick="factorial()" colspan="2">x!</td>
+                <td class="buttons bigger operator" onclick="operator('^')">xⁿ</td>
+            </tr>
+            <tr>
+                <td class="buttons" id="7" onclick="insert('7','result')">7</td>
+                <td class="buttons" id="8" onclick="insert('8','result')">8</td>
+                <td class="buttons" id="9" onclick="insert('9','result')" >9</td>
+                <td class="buttons operator" id="plusMinus" onclick="plusMinus()">+/-</td>
+                <td class="buttons operator" id="percent" onclick="percent()">%</td>
+            </tr>
+            <tr>
+                <td class="buttons" id="4" onclick="insert('4','result')">4</td>
+                <td class="buttons" id="5" onclick="insert('5','result')">5</td>
+                <td class="buttons" id="6" onclick="insert('6','result')">6</td>
+                <td class="buttons operator" id="plus" onclick="operator('+')">+</td>
+                <td class="buttons operator" id="mul" onclick="operator('*')">×</td>
+            </tr>
+            <tr>
+                <td class="buttons" id="1" onclick="insert('1','result')">1</td>
+                <td class="buttons" id="2" onclick="insert('2','result')">2</td>
+                <td class="buttons" id="3" onclick="insert('3','result')">3</td>
+                <td class="buttons operator" id="div" onclick="operator('/')">÷</td>
+                <td class="buttons operator" id="minus" onclick="operator('-')">-</td>
+            </tr>
+            <tr>
+                <td class="buttons" id="0" onclick="insert('0','result')">0</td>
+                <td class="buttons" id="decimal" onclick="decimal('result')">.</td>
+                <td class="buttons" id="equal" onclick="resultVal()" colspan="3">=</td>
+            </tr>
+            
         </table>
     </div>
     <script src="js/script.js"></script>
 </body>
+
 </html>

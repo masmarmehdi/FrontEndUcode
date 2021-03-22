@@ -1,56 +1,72 @@
-
-body{
+*{
     font-family: Arial, Helvetica, sans-serif;
 }
-#history{
-    opacity: 0.4;
+.calculator {
+    margin: auto;
+    width: 510px;
+    height: auto;
+    border: 5px solid darkblue;
+    border-radius: 10px;
 }
+input[type="text"]{
+    cursor:default;
+}
+.header {
+    height: 200px;
+    padding: 30px 30px 0 0;
+    background-color: white;
+    border-radius: 10px;
+    text-align: right;
+    margin-bottom: -50px;
+}
+td{
+    text-align: center;
+    color:wheat;
+}
+
 h1{
     text-align: center;
-    padding:20px;
 }
-p{
+.history, .result {
+    width: 100%;
+    border: none;
+    outline: none;
     text-align: right;
-    padding:5px;
-    font-size: 35px;
 }
-th{
-    font-size: 35px;
-    padding: 100px 220px;
+.history {
+    color:black;
+    opacity: 0.5;
+    font-size: 30px;
 }
 #C{
     background-color: darkred;
 }
 #C:hover{
+    background-color: wheat;
     color:darkred;
-    background-color: wheat;
 }
-td{
-    border: 1px solid black;
-    background-color: rgb(18, 18, 148);
-    color:wheat;
-    cursor: pointer;
-    text-align: center;
-    font-size: 35px;
-    padding: 20px;
-}
-#container{
-    border: 1px solid black;
-    width: fit-content;
-    margin: auto;
-    border:10px solid rgb(18, 18, 148);
-    box-shadow: 1px 2px 5px  1px black;
-}
-td:hover{
-    background-color: wheat;
-    color:darkblue;
-    transition: .5s;
+.result {
+    padding-top: 30px;
+    font-size: 60px;
 }
 
-#equal{
-    background-color: darkgreen;
+.buttons {
+    width: 1%;
+    height: 80px;
+    background-color: darkblue;
+    font-size: 25px;
+    cursor: pointer;
+}
+#equal {
+    background-color:darkgreen;
+    color: white;
 }
 #equal:hover{
-    color:darkgreen;
     background-color: wheat;
+    color: darkgreen;
+}
+.buttons:hover{
+    background-color: wheat;
+    color: darkblue;
+    transition: 1s;
 }
