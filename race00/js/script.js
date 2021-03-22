@@ -1,7 +1,7 @@
 
 let history = document.getElementsByClassName("history")[0];
 let result = document.getElementsByClassName("result")[0];
-
+// input function
 function insert(number, output) {
     let result = document.getElementsByClassName(output)[0];
     console.log(number);
@@ -12,7 +12,7 @@ function insert(number, output) {
     result.value += number;
 
 }
-
+// decimal function
 function decimal(output) {
     let result = document.getElementsByClassName(output)[0];
     let example = result.value.split(' ');
@@ -21,7 +21,7 @@ function decimal(output) {
         result.value += ".";
     }
 }
-
+// square root function
 function sqrt() {
     let result = document.getElementsByClassName("result")[0];
     if (result.value >= 0) {
@@ -32,7 +32,7 @@ function sqrt() {
         result.value = 'Are you dumb?';
     }
 }
-
+// operators function
 function operator(value) {
     let x = history.value.slice(-1);
     if(result.value == 0){
@@ -46,6 +46,7 @@ function operator(value) {
         
     }
 }
+// factorial function 
 function factorial() {
     let result = document.getElementsByClassName("result")[0];
     let factorial = 1;
