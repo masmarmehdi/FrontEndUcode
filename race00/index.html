@@ -9,6 +9,7 @@
 
 <body>
     <h1>Calculator</h1>
+    <main>
     <div class="calculator">
         <div class="header">
             <input class="history" type="text" value="" placeholder="0" readonly>
@@ -56,6 +57,66 @@
             
         </table>
     </div>
+    <div class="convertors">
+            <li onclick="lengthConv()">length</li>
+            <li onclick="weightConv()">weight</li>
+            <li onclick="squareConv()">area</li>
+    </div>
+    <div class="lenth">
+        <div class="length_div">
+            Meters<br>
+            <input id="inputMeters"  type="number" placeholder="Meters" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        </div>
+        <div class="length_div">
+            cm<br>
+            <input id="inputcm"  type="number" placeholder="cm" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        </div>
+        <div class="length_div">
+            Kilometers<br>
+            <input id="inputKilometers"  type="number" placeholder="Kilometers" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        </div>
+        <div class="length_div">
+            Miles<br>
+            <input id="inputMiles"  type="number" placeholder="Miles" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        </div>
+    </div>
+    <div class="weight">
+        <div class="weight_div">
+            Kilogram<br>
+            <input id="inputKilogram"  type="number" placeholder="Kilogram" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+        </div>
+        <div class="weight_div">
+            Pound
+            <input id="inputPound"  type="number" placeholder="Pound" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+        </div>
+        <div class="weight_div">
+            Gram
+            <input id="inputGram"  type="number" placeholder="Gram" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+        </div>
+        <div class="weight_div">
+            Tonne
+            <input id="inputTonne"  type="number" placeholder="Tonne" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+        </div>
+    </div>
+     <!-- -----------------------------------------Square Converter--------------------------------------------------- -->
+     <div class="square">
+        <div class="square_div">
+            mm²
+            <input id="inputMillimeter"  type="number" placeholder="Millimeter^2" oninput="squareConverter(this.id,this.value)" onchange="squareConverter(this.id,this.value)">
+        </div>
+        <div class="square_div">
+            cm²
+            <input id="inputCentimeter"  type="number" placeholder="Centimeter^2" oninput="squareConverter(this.id,this.value)" onchange="squareConverter(this.id,this.value)">
+        </div>
+        <div class="square_div">
+            m²
+            <input id="inputMeter"  type="number" placeholder="Meter^2" oninput="squareConverter(this.id,this.value)" onchange="squareConverter(this.id,this.value)">
+        </div>
+        <div class="square_div">
+            km²
+            <input id="inputKilometer"  type="number" placeholder="Kilometer^2" oninput="squareConverter(this.id,this.value)" onchange="squareConverter(this.id,this.value)">
+        </div>
+</main>
     <script src="js/script.js"></script>
 </body>
 

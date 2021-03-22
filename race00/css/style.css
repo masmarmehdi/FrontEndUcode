@@ -50,6 +50,7 @@ h1{
     font-size: 25px;
     cursor: pointer;
 }
+
 .buttons:hover{
     background-color: wheat;
     color: darkblue;
@@ -72,3 +73,43 @@ h1{
     background-color: wheat;
     color: darkgreen;
 }
+
+
+
+
+.convertors {
+    background-color: darkblue;
+}
+.convertors li {
+    cursor: pointer;
+    font-size: 30px;
+    color:wheat;
+    width:100px;
+    text-align: center;
+    padding: 20px;
+    height: fit-content;
+    list-style-type: none;
+}
+.convertors li:hover{
+    transition: 1s;
+    background-color: wheat;
+    color:darkblue;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.length_div,.square_div,.weight_div{
+    flex-flow: column;
+    background-color: darkblue;
+    padding: 15px;
+    color:wheat;
+}
+
